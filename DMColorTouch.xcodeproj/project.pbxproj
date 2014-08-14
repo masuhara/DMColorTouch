@@ -24,6 +24,7 @@
 		AFBD14401999BDE400A4E9A6 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBD143F1999BDE400A4E9A6 /* image.png */; };
 		AFBD14421999C2F000A4E9A6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBD14411999C2F000A4E9A6 /* QuartzCore.framework */; };
 		AFBD14461999C2FD00A4E9A6 /* UIView+ColorOfPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBD14451999C2FD00A4E9A6 /* UIView+ColorOfPoint.m */; };
+		AFD107A1199C306200DF50D1 /* MovingObjectView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD107A0199C306200DF50D1 /* MovingObjectView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		AFBD14411999C2F000A4E9A6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		AFBD14441999C2FD00A4E9A6 /* UIView+ColorOfPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ColorOfPoint.h"; sourceTree = "<group>"; };
 		AFBD14451999C2FD00A4E9A6 /* UIView+ColorOfPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ColorOfPoint.m"; sourceTree = "<group>"; };
+		AFD1079F199C306200DF50D1 /* MovingObjectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingObjectView.h; sourceTree = "<group>"; };
+		AFD107A0199C306200DF50D1 /* MovingObjectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovingObjectView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 				AFBD141C1999BCEE00A4E9A6 /* Main.storyboard */,
 				AFBD141F1999BCEF00A4E9A6 /* ViewController.h */,
 				AFBD14201999BCEF00A4E9A6 /* ViewController.m */,
+				AFD1079F199C306200DF50D1 /* MovingObjectView.h */,
+				AFD107A0199C306200DF50D1 /* MovingObjectView.m */,
 				AFBD14221999BCEF00A4E9A6 /* Images.xcassets */,
 				AFBD14111999BCED00A4E9A6 /* Supporting Files */,
 			);
@@ -271,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFBD14211999BCEF00A4E9A6 /* ViewController.m in Sources */,
+				AFD107A1199C306200DF50D1 /* MovingObjectView.m in Sources */,
 				AFBD141B1999BCEE00A4E9A6 /* AppDelegate.m in Sources */,
 				AFBD14461999C2FD00A4E9A6 /* UIView+ColorOfPoint.m in Sources */,
 				AFBD14171999BCEE00A4E9A6 /* main.m in Sources */,

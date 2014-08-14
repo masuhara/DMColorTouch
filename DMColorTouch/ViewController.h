@@ -9,11 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 #import "UIView+ColorOfPoint.h"
+#import "MovingObjectView.h"
 
 @interface ViewController : UIViewController
 {
-    IBOutlet UIImageView *imageView;
     UIView *barView;
+    MovingObjectView *mObjectView;
 }
 
 

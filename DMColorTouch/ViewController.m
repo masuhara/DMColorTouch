@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+
 @interface ViewController ()
 
 @end
@@ -18,6 +19,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    mObjectView = [[MovingObjectView alloc] initWithFrame:CGRectMake(120, 174, 200, 200)];
+    [mObjectView startMovingWithLotation:4];
+    [self.view addSubview:mObjectView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,7 +30,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
 
+}
 
 
 #pragma mark - 
@@ -35,13 +42,15 @@
     
     UITouch *touch = [[touches allObjects] objectAtIndex:0];
     touch = [[event allTouches] anyObject];
-    CGPoint location = [touch locationInView:imageView];
+    CGPoint location = [touch locationInView:mObjectView];
     
-    UIColor *currentColor = [imageView colorOfPoint:location];
+    UIColor *currentColor = [mObjectView colorOfPoint:location];
+    
+    // Judge
+    
     
     // Log
-    NSLog(@"color == %@", currentColor);
-    NSLog(@"Alpha: %d", (int)CGColorGetAlpha(currentColor.CGColor));
+    //NSLog(@"Alpha: %d", (int)CGColorGetAlpha(currentColor.CGColor));
     
     
     // Game Over
