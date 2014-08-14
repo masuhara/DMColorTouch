@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF81B33D199C7D1400FC2DA4 /* JudgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF81B33C199C7D1400FC2DA4 /* JudgeView.m */; };
 		AFBD140B1999BCED00A4E9A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBD140A1999BCED00A4E9A6 /* Foundation.framework */; };
 		AFBD140D1999BCED00A4E9A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBD140C1999BCED00A4E9A6 /* CoreGraphics.framework */; };
 		AFBD140F1999BCED00A4E9A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBD140E1999BCED00A4E9A6 /* UIKit.framework */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF81B33B199C7D1400FC2DA4 /* JudgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JudgeView.h; sourceTree = "<group>"; };
+		AF81B33C199C7D1400FC2DA4 /* JudgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JudgeView.m; sourceTree = "<group>"; };
 		AFBD14071999BCED00A4E9A6 /* DMColorTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMColorTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFBD140A1999BCED00A4E9A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AFBD140C1999BCED00A4E9A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -133,6 +136,8 @@
 				AFBD14201999BCEF00A4E9A6 /* ViewController.m */,
 				AFD1079F199C306200DF50D1 /* MovingObjectView.h */,
 				AFD107A0199C306200DF50D1 /* MovingObjectView.m */,
+				AF81B33B199C7D1400FC2DA4 /* JudgeView.h */,
+				AF81B33C199C7D1400FC2DA4 /* JudgeView.m */,
 				AFBD14221999BCEF00A4E9A6 /* Images.xcassets */,
 				AFBD14111999BCED00A4E9A6 /* Supporting Files */,
 			);
@@ -277,6 +282,7 @@
 			files = (
 				AFBD14211999BCEF00A4E9A6 /* ViewController.m in Sources */,
 				AFD107A1199C306200DF50D1 /* MovingObjectView.m in Sources */,
+				AF81B33D199C7D1400FC2DA4 /* JudgeView.m in Sources */,
 				AFBD141B1999BCEE00A4E9A6 /* AppDelegate.m in Sources */,
 				AFBD14461999C2FD00A4E9A6 /* UIView+ColorOfPoint.m in Sources */,
 				AFBD14171999BCEE00A4E9A6 /* main.m in Sources */,

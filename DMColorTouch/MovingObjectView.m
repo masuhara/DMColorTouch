@@ -7,6 +7,7 @@
 //
 
 #import "MovingObjectView.h"
+#import "JudgeView.h"
 
 @implementation MovingObjectView
 {
@@ -27,6 +28,8 @@
         if (randomNum % 2 == 0) moveY = -moveY;
         
         [self makeCenterView];
+        
+        self.tag = 1;
     }
     return self;
 }
@@ -96,8 +99,8 @@
 
 - (void)makeCenterView
 {
-    UIView *centerView = [[UIView alloc] initWithFrame:CGRectMake(30, 75, 50, 50)];
-    centerView.backgroundColor = [UIColor clearColor];
+    JudgeView *centerView = [[JudgeView alloc] initWithFrame:CGRectMake(30, 75, 50, 50)];
+    centerView.backgroundColor = [UIColor redColor];
     [self addSubview:centerView];
 }
 

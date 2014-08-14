@@ -40,17 +40,34 @@
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
     
+    NSArray *allTouches = [touches allObjects];
     UITouch *touch = [[touches allObjects] objectAtIndex:0];
     touch = [[event allTouches] anyObject];
     CGPoint location = [touch locationInView:mObjectView];
     
     UIColor *currentColor = [mObjectView colorOfPoint:location];
     
-    // Judge
     
+    
+//    NSLog(@"%@", NSStringFromClass([[[mObjectView subviews] objectAtIndex:0] class]));
+//    
+//    if ([event touchesForView:[[mObjectView subviews] objectAtIndex:0]]) {
+//        NSLog(@"name of sub %@", [[[mObjectView subviews] objectAtIndex:0] class]);
+//    }
     
     // Log
     //NSLog(@"Alpha: %d", (int)CGColorGetAlpha(currentColor.CGColor));
+    
+    for (UITouch *touch in allTouches)
+    {
+        if (touch.view.tag == 2) {
+            NSLog(@"2");
+        }else if(touch.view.tag == 1){
+            NSLog(@"1");
+        }else{
+            NSLog(@"touch == %@", allTouches);
+        }
+    }
     
     
     // Game Over
